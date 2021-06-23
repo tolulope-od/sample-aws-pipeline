@@ -1,0 +1,23 @@
+{
+  "name": "sample-aws-pipeline",
+  "version": "1.0.0",
+  "description": "test codecommit pipelines on was",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tolulope-od/sample-aws-pipeline.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tolulope-od/sample-aws-pipeline/issues"
+  },
+  "homepage": "https://github.com/tolulope-od/sample-aws-pipeline#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
