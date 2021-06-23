@@ -4,11 +4,11 @@
   "description": "test codecommit pipelines on was",
   "main": "index.js",
   "scripts": {
-    "prestart": "npm run build",
+    "prestart": "npm i -g typescript && npm run build",
     "dev": "tsc -w & nodemon",
     "test": "nyc --reporter=text --reporter=lcov mocha -r ts-node/register ./src/tests/**/*.spec.ts --timeout=30000 --exit --recursive 'src/tests/**/*.ts'",
     "start": "node ./dist/index.js",
-    "build": "npx tsc"
+    "build": "tsc"
   },
   "repository": {
     "type": "git",
