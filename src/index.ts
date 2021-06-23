@@ -7,7 +7,7 @@ import dotenv from 'dotenv';
 dotenv.config({ debug: process.env.NODE_ENV !== 'production' });
 
 const app: Application = express();
-const PORT: number = parseInt(process.env.PORT, 2) || 1001;
+const PORT: number = parseInt(process.env.PORT, 2) || 8081;
 app.use(cors());
 
 app.get('/', (req: Request, res: Response): object => res.status(200).json({
