@@ -8,7 +8,7 @@
     "dev": "tsc -w & nodemon",
     "test": "nyc --reporter=text --reporter=lcov mocha -r ts-node/register ./src/tests/**/*.spec.ts --timeout=30000 --exit --recursive 'src/tests/**/*.ts'",
     "start": "node ./dist/index.js",
-    "build": "rm -rf dist/ && babel ./src --out-dir dist/ --ignore ./node_modules --copy-files"
+    "build": "tsc"
   },
   "repository": {
     "type": "git",
